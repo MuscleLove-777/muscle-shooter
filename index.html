@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>筋肉シューティング / Muscle Shooter | MuscleLove</title>
-  <meta name="description" content="筋肉シューティング！ポップアップするターゲットをタップして高スコアを狙え！Muscle Shooter - Tap the targets!">
+  <!-- ML SEO v1 -->
+<title>【無料】筋肉シューティング - シューティングブラウザゲーム | MuscleLove</title>
+  <meta name="description" content="【無料・登録不要】筋肉シューティングはシューティングの暇つぶしブラウザゲーム。ポップアップするターゲットを撃て！命中率を競え。スマホ・PC両対応。筋肉美女と遊ぶMuscleLove提供のミニゲーム。">
   <meta property="og:title" content="筋肉シューティング / Muscle Shooter | MuscleLove">
   <meta property="og:description" content="筋肉シューティング！ポップアップするターゲットをタップ！💪">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta property="og:image" content="https://musclelove-777.github.io/muscle-shooter/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-  <meta name="twitter:image" content="https://musclelove-777.github.io/muscle-shooter/og.png">
+<!-- ML Analytics: GA4 + Vercel Web Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJLCFVY5TF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HJLCFVY5TF', { send_page_view: true });
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<!-- /ML Analytics -->
+<script defer src="https://musclelove-games.vercel.app/ml-events.js" data-ml-events="v1"></script>
 </head>
-<body>
+<body><div data-tag="ml-pr-bar-v1" style="background:#fef3c7;color:#78350f;padding:6px 12px;text-align:center;font-size:12px;border-bottom:1px solid #fcd34d;font-family:system-ui,sans-serif;line-height:1.4">当サイトの記事には広告（アフィリエイトリンク）が含まれる場合があります。掲載順位や紹介内容は当サイトの編集方針に基づきます。</div>
   <!-- TITLE SCREEN -->
   <div id="screen-title" class="screen active">
     <div class="title-container">
@@ -110,5 +117,27 @@
   </div>
 
   <script src="game.js"></script>
+<!-- ML CrossLink v1: 他のゲーム回遊用フローティングリンク -->
+<a href="https://musclelove-games.vercel.app/?utm_source=ml-game&utm_medium=cross-link&utm_campaign=muscle-shooter"
+   target="_top" rel="noopener"
+   id="ml-crosslink"
+   style="position:fixed;left:8px;bottom:8px;z-index:99998;
+          background:linear-gradient(135deg,#FF6B6B,#FF2D3A);color:#fff;
+          padding:6px 11px;border-radius:18px;font-size:11px;font-weight:700;
+          font-family:system-ui,-apple-system,'Hiragino Sans',sans-serif;
+          text-decoration:none;box-shadow:0 4px 14px rgba(255,45,58,0.5);
+          border:1px solid rgba(255,255,255,0.3);
+          line-height:1;display:inline-flex;align-items:center;gap:4px;
+          opacity:0.92;transition:transform .15s,opacity .15s;">
+  🎮&nbsp;他58本</a>
+<script>
+  (function(){
+    var el = document.getElementById('ml-crosslink');
+    if (!el) return;
+    el.addEventListener('mouseover', function(){ el.style.opacity='1'; el.style.transform='scale(1.06)'; });
+    el.addEventListener('mouseout',  function(){ el.style.opacity='0.92'; el.style.transform='scale(1.0)'; });
+  })();
+</script>
+<!-- /ML CrossLink v1 -->
 </body>
 </html>

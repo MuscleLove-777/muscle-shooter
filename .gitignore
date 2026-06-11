@@ -1,0 +1,52 @@
+# auto-injected by security audit 2026-04-25
+# --- Credentials ---
+.env
+.env.*
+!.env.example
+*.env
+credentials.json
+credentials/
+client_secret*.json
+service_account*.json
+*-mcp-*.json
+token.json
+token_*.json
+.timeline_env
+*.cookie
+*_cookies.json
+*_cookies_base64.txt
+cookies.txt
+
+# --- Cache / build ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+node_modules/
+.next/
+.cache/
+dist/
+build/
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+
+# auto-defense (weekly sweep)
+.env
+.env.*
+!.env.example
+credentials*.json
+token*.json
+client_secret*.json
+service_account*.json
+*.pem
+*.key
+*.cookie
+*_cookies.json
+cookies.txt
